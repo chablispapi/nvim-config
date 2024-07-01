@@ -1,3 +1,4 @@
+--[[
 return { -- You can easily change to a different colorscheme.
 	-- Change the name of the colorscheme plugin below, and then
 	-- change the command in the config to whatever the name of that colorscheme is.
@@ -12,6 +13,16 @@ return { -- You can easily change to a different colorscheme.
 		vim.cmd.colorscheme("everforest")
 
 		-- You can configure highlights by doing something like:
+		vim.cmd.hi("Comment gui=none")
+	end,
+}
+--]]
+return {
+	"catppuccin/nvim",
+	name = "catppuccin",
+	priority = 1000,
+	init = function()
+		vim.cmd.colorscheme("catppuccin-frappe")
 		vim.cmd.hi("Comment gui=none")
 	end,
 }
