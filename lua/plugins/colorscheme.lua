@@ -16,7 +16,6 @@ return { -- You can easily change to a different colorscheme.
 		vim.cmd.hi("Comment gui=none")
 	end,
 }
---]]
 return {
 	"catppuccin/nvim",
 	name = "catppuccin",
@@ -25,4 +24,15 @@ return {
 		vim.cmd.colorscheme("catppuccin-frappe")
 		vim.cmd.hi("Comment gui=none")
 	end,
+}
+--]]
+return {
+	"sho-87/kanagawa-paper.nvim",
+	lazy = false,
+	priority = 1000,
+	init = function()
+		vim.cmd.colorscheme("kanagawa-paper")
+		vim.cmd.hi("Comment gui=none")
+	end,
+	opts = {},
 }
